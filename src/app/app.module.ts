@@ -1,3 +1,4 @@
+import { AgendamentoService } from './../domain/agendamento/agendamento-service';
 import { CadastroPage } from './../pages/cadastro/cadastro';
 import { EscolhaPage } from './../pages/escolha/escolha';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -24,6 +25,6 @@ import 'rxjs/add/operator/toPromise';
     EscolhaPage,
     CadastroPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AgendamentoService]
 })
 export class AppModule {}

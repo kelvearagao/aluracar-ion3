@@ -1,4 +1,4 @@
-import { Carro } from './carro';
+import { Carro } from './../carro';
 
 export class Agendamento {
   constructor(
